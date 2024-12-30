@@ -105,7 +105,7 @@ export type Icon = FC<IconProps>;
 
 const react = async (icons) => {
   console.log('----- generating icons -> react');
-  const builtSourceDir = path.join(packageDir, 'iconsax-react', 'src');
+  const builtSourceDir = path.join(packageDir, 'iconsax-react-19', 'src');
   await fs.writeFile(path.join(builtSourceDir, 'index.js'), '', 'utf-8');
   await fs.writeFile(
     path.join(builtSourceDir, 'index.d.ts'),
@@ -180,7 +180,7 @@ export type Icon = FC<IconProps>;
 `;
 const reactNative = async (icons) => {
   console.log('----- generating icons -> react native');
-  const builtSourceDir = path.join(packageDir, 'iconsax-react-native', 'src');
+  const builtSourceDir = path.join(packageDir, 'iconsax-react-19-native', 'src');
   await fs.writeFile(path.join(builtSourceDir, 'index.js'), '', 'utf-8');
   await fs.writeFile(
     path.join(builtSourceDir, 'index.d.ts'),

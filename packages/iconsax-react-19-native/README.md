@@ -21,9 +21,9 @@ Perfectly balance |
 ## Installation
 
 ```bash
-yarn add iconsax-react-native react-native-svg
+yarn add iconsax-react-19-native react-native-svg
 # or
-npm i iconsax-react-native react-native-svg
+npm i iconsax-react-19-native react-native-svg
 ```
 
 ## Usage
@@ -31,7 +31,7 @@ npm i iconsax-react-native react-native-svg
 ```jsx
 import React from 'react';
 //import icon.
-import { EmojiHappy } from 'iconsax-react-native';
+import { EmojiHappy } from 'iconsax-react-19-native';
 
 const Example = () => {
   // then use it as a normal React Component

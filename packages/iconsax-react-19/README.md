@@ -20,9 +20,9 @@ Perfectly balance |
 ## Installation
 
 ```bash
-yarn add iconsax-react
+yarn add iconsax-react-19
 # or
-npm i iconsax-react
+npm i iconsax-react-19
 ```
 
 ## Usage
@@ -30,7 +30,7 @@ npm i iconsax-react
 ```jsx
 import React from 'react';
 //import icon.
-import { EmojiHappy } from 'iconsax-react';
+import { EmojiHappy } from 'iconsax-react-19';
 
 const Example = () => {
   // then use it as a normal React Component

@@ -23,16 +23,16 @@ bun install iconsax-react-19
 ### React Native
 
 ```bash
-yarn add iconsax-react-native react-native-svg
+yarn add iconsax-react-19-native react-native-svg
 # or
-npm i iconsax-react-native react-native-svg
+npm i iconsax-react-19-native react-native-svg
 ```
 
 ## Usage
 
 ```jsx
 import React from 'react';
-//import icon. for React Native import from 'iconsax-react-native'
+//import icon. for React Native import from 'iconsax-react-19-native'
 import { EmojiHappy } from 'iconsax-react';
 
 const Example = () => {
