@@ -11,7 +11,7 @@
     "type": "git",
     "url": "git+https://github.com/MohamedRagheb/iconsax-react-19.git"
   },
-  "version": "1.0.0",
+  "version": "1.2.0",
   "scripts": {
     "gen": "node ./scripts/build.js",
     "bootstrap": "lerna bootstrap",
