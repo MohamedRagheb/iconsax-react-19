@@ -15,7 +15,7 @@
   "scripts": {
     "gen": "node ./scripts/build.js",
     "bootstrap": "lerna bootstrap",
-    "build": "lerna run build --ignore website",
+    "build": "lerna run build --ignore website"
   },
   "devDependencies": {
     "camelcase": "^6.2.0",
