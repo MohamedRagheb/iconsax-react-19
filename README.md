@@ -1,28 +1,23 @@
-<h1 align="center">iconsax for React and React Native</h1>
-
-<p align="center">
-  1000 icons in 6 different styles, total 6000 icons | 
-Perfectly balance | 
-24px grid-based
-<p>
+<h1 align="center">iconsax for React and React Native With react 19 support </h1>
 
 <p align="center">
   <a href="https://iconsax-react.pages.dev/"><strong>Browse icons at site</strong></a>
 </p>
-<br>
-<br>
 
-> ©️ iconsax [github](https://github.com/lusaxweb/iconsax) and
-> [official website](https://iconsax.io/) (other format and platform available)
+> ©️ iconsax-react-19 [github](https://github.com/MohamedRagheb/iconsax-react-19) and
+> [official website](https://iconsax-react.pages.dev/) (other format and platform available)
 
 ## Installation
 
 ### React
 
 ```bash
-yarn add iconsax-react
+yarn add iconsax-react-19
 # or
-npm i iconsax-react
+npm i iconsax-react-19
+
+#or 
+bun install iconsax-react-19
 ```
 
 ### React Native
@@ -60,11 +55,6 @@ You can configure Icons with inline props:
 | `size`    | `number` `string`                                   | 24px           | size={24} or size="24" |
 | `variant` | `Linear` `Outline` `TwoTone` `Bulk` `Broken` `Bold` | `Linear`       | icons styles           |
 
----
-
-## Contributing
-
-See [CONTRIBUTING.md](./CONTRIBUTING.md)
 
 ## License
 

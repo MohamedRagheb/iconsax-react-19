@@ -1,7 +1,6 @@
 {
-  "name": "iconsax",
+  "name": "iconsax-react-19",
   "description": "iconsax for react and react native react19",
-  "private": true,
   "workspaces": {
     "packages": [
       "packages/*",
@@ -12,15 +11,11 @@
     "type": "git",
     "url": "git+https://github.com/MohamedRagheb/iconsax-react-19.git"
   },
-  "version": "0.0.8",
+  "version": "1.0.0",
   "scripts": {
     "gen": "node ./scripts/build.js",
     "bootstrap": "lerna bootstrap",
     "build": "lerna run build --ignore website",
-    "website": "yarn workspace website",
-    "website:dev": "yarn website dev",
-    "website:build": "yarn website build",
-    "website:start": "yarn website start"
   },
   "devDependencies": {
     "camelcase": "^6.2.0",
