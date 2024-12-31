@@ -6,7 +6,6 @@ const path = require('path');
 const fs = require('fs').promises;
 const { readFileSync } = require('fs');
 const cheerio = require('cheerio');
-const prettier = require('prettier-eslint');
 const cc = require('camelcase');
 
 // Paths
@@ -15,19 +14,7 @@ const IconsDir = path.join(rootDir, 'icons');
 const packageDir = path.join(rootDir, 'packages');
 
 // format files before write
-const format = (text) =>
-  // eslint-disable-next-line implicit-arrow-linebreak
-  prettier({
-    text,
-    eslintConfig: {
-      extends: 'airbnb',
-    },
-    prettierOptions: {
-      bracketSpacing: true,
-      singleQuote: true,
-      parser: 'flow',
-    },
-  });
+const format = (text) => text || '';
 
 const convertAttrsToReactAttrs = (obj) => {
   const keyValues = Object.keys(obj).map((key) => {
@@ -52,7 +39,7 @@ const reactiveChildren = (children, isNative) => {
   return newChidlren;
 };
 const convertElementInsideSvgToReactElement = (svgFile, isNative) => {
-  const $ = cheerio.load(svgFile);
+  const $ = cheerio.load(svgFile,{ xmlMode: true });
   const elem = $('svg > *');
   elem.each((_, element) => {
     if (isNative) element.name = element.name[0].toUpperCase() + element.name.slice(1);
@@ -104,7 +91,7 @@ export type Icon = FC<IconProps>;
 
 const react = async (icons) => {
   console.log('----- generating icons -> react');
-  const builtSourceDir = path.join(packageDir, 'iconsax-react-19', 'src');
+  const builtSourceDir = path.join(packageDir, 'iconsax-react-19-update', 'src');
   await fs.writeFile(path.join(builtSourceDir, 'index.js'), '', 'utf-8');
   await fs.writeFile(
     path.join(builtSourceDir, 'index.d.ts'),
@@ -114,7 +101,7 @@ const react = async (icons) => {
 
   icons.categories.forEach(async (category) => {
     category.icons.forEach(async (icon) => {
-      const iconsAllVariant = icons.variants.map((variant) => {
+      const iconsAllVariant = icons.variants.map( (variant) => {
         const svgFile = readFileSync(path.join(IconsDir, variant, category.name, icon));
         return { variant, svgFile };
       });
@@ -124,10 +111,11 @@ const react = async (icons) => {
       if (ComponentName.match(/^\d/)) {
         ComponentName = 'I' + ComponentName;
       }
+
       const element = `
        import React, {forwardRef} from 'react';
        import PropTypes from 'prop-types';
-
+       
        ${loopAllVariant(iconsAllVariant)}
 
        ${switchStatementForVariants(iconsAllVariant)}
@@ -179,7 +167,7 @@ export type Icon = FC<IconProps>;
 `;
 const reactNative = async (icons) => {
   console.log('----- generating icons -> react native');
-  const builtSourceDir = path.join(packageDir, 'iconsax-react-19-native', 'src');
+  const builtSourceDir = path.join(packageDir, 'iconsax-react-19-update-native', 'src');
   await fs.writeFile(path.join(builtSourceDir, 'index.js'), '', 'utf-8');
   await fs.writeFile(
     path.join(builtSourceDir, 'index.d.ts'),

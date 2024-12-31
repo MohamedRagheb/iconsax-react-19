@@ -12,20 +12,20 @@
 ### React
 
 ```bash
-yarn add iconsax-react-19
+yarn add iconsax-react-19-update
 # or
-npm i iconsax-react-19
+npm i iconsax-react-19-update
 
 #or 
-bun install iconsax-react-19
+bun install iconsax-react-19-update
 ```
 
 ## Usage
 
 ```jsx
 import React from 'react';
-//import icon. for React Native import from 'iconsax-react-19-native'
-import { EmojiHappy } from 'iconsax-react';
+//import icon. for React Native import from 'iconsax-react-19-update-native'
+import { EmojiHappy } from 'iconsax-react-19-update';
 
 const Example = () => {
   // then use it as a normal React Component

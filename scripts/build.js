@@ -22,7 +22,7 @@ const main = async () => {
 
     space();
     packages.forEach(async (p) => {
-      const srPath = path.join(packagesDir, `iconsax-${p}`, 'src');
+      const srPath = path.join(packagesDir, `iconsax-${p}-update`, 'src');
 
       // 2. generating meta-data file
       console.log(`----- generating meta-data file -> ${p}`);

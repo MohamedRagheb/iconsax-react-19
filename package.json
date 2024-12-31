@@ -1,14 +1,16 @@
 {
-  "name": "iconsax-react19",
+  "name": "iconsax-react-19",
   "description": "iconsax for react react 19",
-  "workspaces": [
-    "packages/*"
-  ],
+  "workspaces": {
+    "packages": [
+      "packages/*"
+    ]
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/MohamedRagheb/iconsax-react-19.git"
   },
-  "version": "1.2.0",
+  "version": "1.2.4",
   "scripts": {
     "gen": "node ./scripts/build.js",
     "bootstrap": "lerna bootstrap",
@@ -16,7 +18,7 @@
   },
   "devDependencies": {
     "camelcase": "^6.2.0",
-    "cheerio": "^1.0.0-rc.10",
+    "cheerio": "^1.0.0",
     "lerna": "^4.0.0",
     "prettier-eslint": "^13.0.0"
   }
