@@ -1,13 +1,12 @@
 {
-  "name": "iconsax-react-19-update",
-  "version": "1.0.0",
-  "description": "Iconsax icon pack for React 19",
+  "name": "vuesax-icons-react",
+  "version": "1.0.2",
+  "description": "vuesax icon pack for React 19",
   "author": "Mohamed Rgaheb <modyahmed221@gmail.com>",
-  "homepage": "https://iconsax-react.pages.dev/",
+  "homepage": "git+https://github.com/MohamedRagheb/iconsax-react-19.git",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/MohamedRagheb/iconsax-react-19.git",
-    "directory": "packages/iconsax-react-19"
+    "url": "git+https://github.com/MohamedRagheb/iconsax-react-19.git"
   },
   "publishConfig": {
     "access": "public"
