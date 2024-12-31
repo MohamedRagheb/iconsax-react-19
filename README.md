@@ -1,4 +1,4 @@
-<h1 align="center">iconsax for React and React Native With react 19 support </h1>
+<h1 align="center">iconsax for React  With react 19 support </h1>
 
 <p align="center">
   <a href="https://iconsax-react.pages.dev/"><strong>Browse icons at site</strong></a>
@@ -18,14 +18,6 @@ npm i iconsax-react-19
 
 #or 
 bun install iconsax-react-19
-```
-
-### React Native
-
-```bash
-yarn add iconsax-react-19-native react-native-svg
-# or
-npm i iconsax-react-19-native react-native-svg
 ```
 
 ## Usage

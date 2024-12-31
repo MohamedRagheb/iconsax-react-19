@@ -8,7 +8,6 @@ const { readFileSync } = require('fs');
 const cheerio = require('cheerio');
 const prettier = require('prettier-eslint');
 const cc = require('camelcase');
-const { log } = require('console');
 
 // Paths
 const rootDir = path.resolve();
@@ -246,8 +245,6 @@ const reactNative = async (icons) => {
   });
 };
 const generateIcons = {
-  react,
-  'react-native': reactNative,
+  'react-19':react,
 };
-
 module.exports = generateIcons;

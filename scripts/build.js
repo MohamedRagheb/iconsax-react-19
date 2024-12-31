@@ -9,7 +9,7 @@ const generateIcons = require('./generateIcons');
 const rootDir = path.resolve();
 const IconsDir = path.join(rootDir, 'icons');
 const packagesDir = path.join(rootDir, 'packages');
-const packages = ['react', 'react-native'];
+const packages = ['react-19'];
 
 const space = () => console.log('-----------------------------');
 const main = async () => {

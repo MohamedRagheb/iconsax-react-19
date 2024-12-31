@@ -1,7 +1,7 @@
 {
-  "packages": ["packages/*", "website" ],
+  "packages": ["packages/*" ],
   "version": "independent",
   "npmClient": "yarn",
-  "useWorkspaces": true,
+  "useWorkspaces": false,
   "registry": "https://registry.npmjs.org/"
 }

@@ -1,16 +1,13 @@
 {
-  "name": "iconsax-react",
-  "version": "0.0.8",
-  "description": "Iconsax icon pack for React",
-  "author": "Erfan Khadivar <rendinjast@gmail.com>",
+  "name": "iconsax-react-19",
+  "version": "1.0.0",
+  "description": "Iconsax icon pack for React 19",
+  "author": "Mohamed Rgaheb <modyahmed221@gmail.com>",
   "homepage": "https://iconsax-react.pages.dev/",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/rendinjast/iconsax-react.git",
-    "directory": "packages/iconsax-react"
-  },
-  "bugs": {
-    "url": "https://github.com/rendinjast/iconsax-react/issues"
+    "url": "git+https://github.com/MohamedRagheb/iconsax-react-19.git",
+    "directory": "packages/iconsax-react-19"
   },
   "publishConfig": {
     "access": "public"
@@ -29,7 +26,8 @@
     "icons",
     "react",
     "icon components",
-    "iconsax"
+    "iconsax",
+    "iconsax-react"
   ],
   "files": [
     "dist"
